@@ -198,6 +198,7 @@ def run_validation(step, prompt="magma stone block, pixel art, voxel texture, se
 # 6. ЦИКЛ ОБУЧЕНИЯ С ПРОГРЕСС-БАРОМ (tqdm)
 # ==========================================
 print("--> Начало процесса обучения LoRA...")
+print(f"DEVICE: {DEVICE}")
 global_step = 0
 total_steps = NUM_EPOCHS * len(train_dataloader)
 
