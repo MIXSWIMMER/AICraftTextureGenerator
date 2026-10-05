@@ -7,8 +7,8 @@ from diffusers import StableDiffusionPipeline, UNet2DConditionModel
 # 1. НАСТРОЙКИ И ПУТИ
 # ==========================================
 MODEL_NAME = "runwayml/stable-diffusion-v1-5"
-LORA_PATH = "./lora_voxel_textures/checkpoint-2500"  # Путь к папке с обученной LoRA (или к checkpoint-XXXX)
-OUTPUT_DIR = "./generated_textures"
+LORA_PATH = "lora_voxel_textures/checkpoint-2500"  # Путь к папке с обученной LoRA (или к checkpoint-XXXX)
+OUTPUT_DIR = "generated_textures"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 TARGET_SIZE = 32  # Итоговый размер текстуры для AICraft
 

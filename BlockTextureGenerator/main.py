@@ -16,7 +16,7 @@ from peft import LoraConfig, get_peft_model, PeftModel
 # 1. КОНФИГУРАЦИЯ И ГИПЕРПАРАМЕТРЫ
 # ==========================================
 MODEL_NAME = "runwayml/stable-diffusion-v1-5"  # Базовая модель SD 1.5
-OUTPUT_DIR = "./lora_voxel_textures"  # Папка для сохранения весов LoRA
+OUTPUT_DIR = "lora_voxel_textures"  # Папка для сохранения весов LoRA
 
 # Пути к вашим Parquet-файлам
 TRAIN_PARQUET = "data/train.parquet"
